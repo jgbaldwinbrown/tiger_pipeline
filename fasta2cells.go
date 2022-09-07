@@ -31,6 +31,8 @@ func ParseHeader(r io.Reader) (headers []string, seqs []string) {
 }
 
 func WriteFaStruct(w io.Writer, headers []string, seqs []string) {
+	fmt.Fprintf(w, `# Created by Octave 5.2.0, Wed Sep 07 15:06:00 2022 MDT <jgbaldwinbrown@jgbaldwinbrown-ThinkPad-T480>
+`)
 	fmt.Fprintf(
 		w,
 		`# name: Sequence
